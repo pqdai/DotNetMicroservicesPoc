@@ -110,27 +110,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backup", "Backup", "{E7F9E1
 		E:\Backup\postgres.backup = E:\Backup\postgres.backup
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "a", "a", "{F5EF67E1-5865-47EA-BE14-DF3F082B281F}"
-	ProjectSection(SolutionItems) = preProject
-		E:\Lab4_KTTKPM\Web\(c) = E:\Lab4_KTTKPM\Web\(c)
-		E:\Lab4_KTTKPM\Web\.dockerignore = E:\Lab4_KTTKPM\Web\.dockerignore
-		E:\Lab4_KTTKPM\Web\.env-example = E:\Lab4_KTTKPM\Web\.env-example
-		E:\Lab4_KTTKPM\Web\.gitignore = E:\Lab4_KTTKPM\Web\.gitignore
-		E:\Lab4_KTTKPM\Web\11.9.0 = E:\Lab4_KTTKPM\Web\11.9.0
-		E:\Lab4_KTTKPM\Web\babel.config.js = E:\Lab4_KTTKPM\Web\babel.config.js
-		E:\Lab4_KTTKPM\Web\cd = E:\Lab4_KTTKPM\Web\cd
-		E:\Lab4_KTTKPM\Web\Dockerfile = E:\Lab4_KTTKPM\Web\Dockerfile
-		E:\Lab4_KTTKPM\Web\Microsoft = E:\Lab4_KTTKPM\Web\Microsoft
-		E:\Lab4_KTTKPM\Web\nginx.conf = E:\Lab4_KTTKPM\Web\nginx.conf
-		E:\Lab4_KTTKPM\Web\node = E:\Lab4_KTTKPM\Web\node
-		E:\Lab4_KTTKPM\Web\npm = E:\Lab4_KTTKPM\Web\npm
-		E:\Lab4_KTTKPM\Web\package-lock.json = E:\Lab4_KTTKPM\Web\package-lock.json
-		E:\Lab4_KTTKPM\Web\package.json = E:\Lab4_KTTKPM\Web\package.json
-		E:\Lab4_KTTKPM\Web\README.md = E:\Lab4_KTTKPM\Web\README.md
-		E:\Lab4_KTTKPM\Web\v24.14.0 = E:\Lab4_KTTKPM\Web\v24.14.0
-		E:\Lab4_KTTKPM\Web\yarn.lock = E:\Lab4_KTTKPM\Web\yarn.lock
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
