@@ -101,6 +101,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postgres", "postgres", "{6A
 		..\..\..\..\..\Lab4_KTTKPM\postgres\Dockerfile = ..\..\..\..\..\Lab4_KTTKPM\postgres\Dockerfile
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backup", "Backup", "{E7F9E177-1F66-49F7-A17E-94FE39436D47}"
+	ProjectSection(SolutionItems) = preProject
+		E:\Backup\lab_netmicro_jobs.backup = E:\Backup\lab_netmicro_jobs.backup
+		E:\Backup\lab_netmicro_payments.backup = E:\Backup\lab_netmicro_payments.backup
+		E:\Backup\lab_netmicro_policy.backup = E:\Backup\lab_netmicro_policy.backup
+		E:\Backup\lab_netmicro_pricing.backup = E:\Backup\lab_netmicro_pricing.backup
+		E:\Backup\postgres.backup = E:\Backup\postgres.backup
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
