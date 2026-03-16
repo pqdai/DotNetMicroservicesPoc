@@ -53,62 +53,64 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentService.Test", "Paym
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
-		E:\Lab4_KTTKPM\Web\.dockerignore = E:\Lab4_KTTKPM\Web\.dockerignore
-		E:\Lab4_KTTKPM\Web\.env-example = E:\Lab4_KTTKPM\Web\.env-example
-		E:\Lab4_KTTKPM\Web\.gitignore = E:\Lab4_KTTKPM\Web\.gitignore
-		E:\Lab4_KTTKPM\Web\babel.config.js = E:\Lab4_KTTKPM\Web\babel.config.js
-		E:\Lab4_KTTKPM\Web\Dockerfile = E:\Lab4_KTTKPM\Web\Dockerfile
-		E:\Lab4_KTTKPM\Web\nginx.conf = E:\Lab4_KTTKPM\Web\nginx.conf
-		E:\Lab4_KTTKPM\Web\package-lock.json = E:\Lab4_KTTKPM\Web\package-lock.json
-		E:\Lab4_KTTKPM\Web\package.json = E:\Lab4_KTTKPM\Web\package.json
-		E:\Lab4_KTTKPM\Web\README.md = E:\Lab4_KTTKPM\Web\README.md
-		E:\Lab4_KTTKPM\Web\yarn.lock = E:\Lab4_KTTKPM\Web\yarn.lock
+		Web\(c) = Web\(c)
+		Web\.dockerignore = Web\.dockerignore
+		Web\.env-example = Web\.env-example
+		Web\.gitignore = Web\.gitignore
+		Web\11.9.0 = Web\11.9.0
+		Web\babel.config.js = Web\babel.config.js
+		Web\cd = Web\cd
+		Web\Dockerfile = Web\Dockerfile
+		Web\Microsoft = Web\Microsoft
+		Web\nginx.conf = Web\nginx.conf
+		Web\node = Web\node
+		Web\npm = Web\npm
+		Web\package-lock.json = Web\package-lock.json
+		Web\package.json = Web\package.json
+		Web\README.md = Web\README.md
+		Web\v24.14.0 = Web\v24.14.0
+		Web\yarn.lock = Web\yarn.lock
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eureka-server", "eureka-server", "{97CFE79F-0CF6-4685-867B-C37A2CE6ABC5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eureka-server", "eureka-server", "{E7A486D4-70F0-41B6-AF31-1C7E2C8DF202}"
 	ProjectSection(SolutionItems) = preProject
-		E:\Lab4_KTTKPM\eureka-server\build.gradle = E:\Lab4_KTTKPM\eureka-server\build.gradle
-		E:\Lab4_KTTKPM\eureka-server\gradlew = E:\Lab4_KTTKPM\eureka-server\gradlew
-		E:\Lab4_KTTKPM\eureka-server\gradlew.bat = E:\Lab4_KTTKPM\eureka-server\gradlew.bat
+		eureka-server\build.gradle = eureka-server\build.gradle
+		eureka-server\cd = eureka-server\cd
+		eureka-server\dir = eureka-server\dir
+		eureka-server\Dockerfile = eureka-server\Dockerfile
+		eureka-server\dỉ = eureka-server\dỉ
+		eureka-server\gradlew = eureka-server\gradlew
+		eureka-server\gradlew.bat = eureka-server\gradlew.bat
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentPortalApiGateway", "..\..\..\..\..\Lab4_KTTKPM\AgentPortalApiGateway\AgentPortalApiGateway.csproj", "{6A969951-F828-15D1-C718-67C816E025A8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmClient", "..\..\..\..\..\Lab4_KTTKPM\BlazorWasmClient\BlazorWasmClient.csproj", "{D4350ACC-0BDD-573E-7112-DB0CECE67BB7}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{A2AF10BF-447C-4BFB-B12F-E93E964F7537}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postgres", "postgres", "{369CB01D-A1A7-72D2-AABC-3F0945D148A2}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\Lab4_KTTKPM\scripts\app-build.sh = ..\..\..\..\..\Lab4_KTTKPM\scripts\app-build.sh
-		..\..\..\..\..\Lab4_KTTKPM\scripts\app-down.sh = ..\..\..\..\..\Lab4_KTTKPM\scripts\app-down.sh
-		..\..\..\..\..\Lab4_KTTKPM\scripts\app-logs.sh = ..\..\..\..\..\Lab4_KTTKPM\scripts\app-logs.sh
-		..\..\..\..\..\Lab4_KTTKPM\scripts\app-run.sh = ..\..\..\..\..\Lab4_KTTKPM\scripts\app-run.sh
-		..\..\..\..\..\Lab4_KTTKPM\scripts\app.yml = ..\..\..\..\..\Lab4_KTTKPM\scripts\app.yml
-		..\..\..\..\..\Lab4_KTTKPM\scripts\build-without-tests.bat = ..\..\..\..\..\Lab4_KTTKPM\scripts\build-without-tests.bat
-		..\..\..\..\..\Lab4_KTTKPM\scripts\build-without-tests.sh = ..\..\..\..\..\Lab4_KTTKPM\scripts\build-without-tests.sh
-		..\..\..\..\..\Lab4_KTTKPM\scripts\build.bat = ..\..\..\..\..\Lab4_KTTKPM\scripts\build.bat
-		..\..\..\..\..\Lab4_KTTKPM\scripts\build.sh = ..\..\..\..\..\Lab4_KTTKPM\scripts\build.sh
-		..\..\..\..\..\Lab4_KTTKPM\scripts\infra-build.sh = ..\..\..\..\..\Lab4_KTTKPM\scripts\infra-build.sh
-		..\..\..\..\..\Lab4_KTTKPM\scripts\infra-down.sh = ..\..\..\..\..\Lab4_KTTKPM\scripts\infra-down.sh
-		..\..\..\..\..\Lab4_KTTKPM\scripts\infra-logs.sh = ..\..\..\..\..\Lab4_KTTKPM\scripts\infra-logs.sh
-		..\..\..\..\..\Lab4_KTTKPM\scripts\infra-run.sh = ..\..\..\..\..\Lab4_KTTKPM\scripts\infra-run.sh
-		..\..\..\..\..\Lab4_KTTKPM\scripts\infra.yml = ..\..\..\..\..\Lab4_KTTKPM\scripts\infra.yml
-		..\..\..\..\..\Lab4_KTTKPM\scripts\rabbitmq-isolated.conf = ..\..\..\..\..\Lab4_KTTKPM\scripts\rabbitmq-isolated.conf
+		postgres\createdatabases.sql = postgres\createdatabases.sql
+		postgres\Dockerfile = postgres\Dockerfile
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postgres", "postgres", "{6ACF15D0-1794-4F56-9C6E-663ADF8C7BAB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{7DC331D0-3EC4-40A6-69FB-1CBEB2E0D1EA}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\Lab4_KTTKPM\postgres\createdatabases.sql = ..\..\..\..\..\Lab4_KTTKPM\postgres\createdatabases.sql
-		..\..\..\..\..\Lab4_KTTKPM\postgres\Dockerfile = ..\..\..\..\..\Lab4_KTTKPM\postgres\Dockerfile
+		scripts\app-build.sh = scripts\app-build.sh
+		scripts\app-down.sh = scripts\app-down.sh
+		scripts\app-logs.sh = scripts\app-logs.sh
+		scripts\app-run.sh = scripts\app-run.sh
+		scripts\app.yml = scripts\app.yml
+		scripts\build-without-tests.bat = scripts\build-without-tests.bat
+		scripts\build-without-tests.sh = scripts\build-without-tests.sh
+		scripts\build.bat = scripts\build.bat
+		scripts\build.sh = scripts\build.sh
+		scripts\infra-build.sh = scripts\infra-build.sh
+		scripts\infra-down.sh = scripts\infra-down.sh
+		scripts\infra-logs.sh = scripts\infra-logs.sh
+		scripts\infra-run.sh = scripts\infra-run.sh
+		scripts\infra.yml = scripts\infra.yml
+		scripts\rabbitmq-isolated.conf = scripts\rabbitmq-isolated.conf
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backup", "Backup", "{E7F9E177-1F66-49F7-A17E-94FE39436D47}"
-	ProjectSection(SolutionItems) = preProject
-		E:\Backup\lab_netmicro_jobs.backup = E:\Backup\lab_netmicro_jobs.backup
-		E:\Backup\lab_netmicro_payments.backup = E:\Backup\lab_netmicro_payments.backup
-		E:\Backup\lab_netmicro_policy.backup = E:\Backup\lab_netmicro_policy.backup
-		E:\Backup\lab_netmicro_pricing.backup = E:\Backup\lab_netmicro_pricing.backup
-		E:\Backup\postgres.backup = E:\Backup\postgres.backup
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmClient", "BlazorWasmClient\BlazorWasmClient.csproj", "{8F4F382E-0D66-134B-BD47-51268FCFBA19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentPortalApiGateway", "AgentPortalApiGateway\AgentPortalApiGateway.csproj", "{8BDED974-C717-428C-D7B1-F1A2AF4831F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -212,14 +214,14 @@ Global
 		{136245F6-1987-4C2B-857D-0BB4EE189D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{136245F6-1987-4C2B-857D-0BB4EE189D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{136245F6-1987-4C2B-857D-0BB4EE189D69}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6A969951-F828-15D1-C718-67C816E025A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A969951-F828-15D1-C718-67C816E025A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A969951-F828-15D1-C718-67C816E025A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A969951-F828-15D1-C718-67C816E025A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4350ACC-0BDD-573E-7112-DB0CECE67BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4350ACC-0BDD-573E-7112-DB0CECE67BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4350ACC-0BDD-573E-7112-DB0CECE67BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4350ACC-0BDD-573E-7112-DB0CECE67BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F4F382E-0D66-134B-BD47-51268FCFBA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F4F382E-0D66-134B-BD47-51268FCFBA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F4F382E-0D66-134B-BD47-51268FCFBA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F4F382E-0D66-134B-BD47-51268FCFBA19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BDED974-C717-428C-D7B1-F1A2AF4831F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BDED974-C717-428C-D7B1-F1A2AF4831F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BDED974-C717-428C-D7B1-F1A2AF4831F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BDED974-C717-428C-D7B1-F1A2AF4831F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
