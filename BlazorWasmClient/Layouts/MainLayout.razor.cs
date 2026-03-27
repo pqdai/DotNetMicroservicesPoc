@@ -5,9 +5,9 @@ namespace BlazorWasmClient.Layouts;
 
 public partial class MainLayout
 {
-    [Inject] protected ITextLocalizerService? LocalizationService { get; set; }
+    [Inject] protected ITextLocalizerService LocalizationService { get; set; } = default!;
 
-    [CascadingParameter] protected Theme? Theme { get; set; }
+    [CascadingParameter] protected Theme Theme { get; set; } = default!;
 
     protected string layoutType = "fixed-header";
 

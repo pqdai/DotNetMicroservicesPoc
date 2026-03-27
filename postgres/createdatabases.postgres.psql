@@ -1,0 +1,76 @@
+\set ON_ERROR_STOP on
+
+SELECT 'CREATE USER lab_user WITH PASSWORD ''lab_pass'';'
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM pg_roles
+    WHERE rolname = 'lab_user'
+)
+\gexec
+
+SELECT 'CREATE DATABASE lab_netmicro_payments;'
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM pg_database
+    WHERE datname = 'lab_netmicro_payments'
+)
+\gexec
+
+SELECT 'CREATE DATABASE lab_netmicro_jobs;'
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM pg_database
+    WHERE datname = 'lab_netmicro_jobs'
+)
+\gexec
+
+SELECT 'CREATE DATABASE lab_netmicro_policy;'x 
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM pg_database
+    WHERE datname = 'lab_netmicro_policy'
+)
+\gexec
+
+SELECT 'CREATE DATABASE lab_netmicro_pricing;'
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM pg_database
+    WHERE datname = 'lab_netmicro_pricing'
+)
+\gexec
+
+GRANT ALL PRIVILEGES ON DATABASE lab_netmicro_payments TO lab_user;
+GRANT ALL PRIVILEGES ON DATABASE lab_netmicro_jobs TO lab_user;
+GRANT ALL PRIVILEGES ON DATABASE lab_netmicro_policy TO lab_user;
+GRANT ALL PRIVILEGES ON DATABASE lab_netmicro_pricing TO lab_user;
+
+\connect lab_netmicro_payments
+GRANT USAGE, CREATE ON SCHEMA public TO lab_user;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO lab_user;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO lab_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON TABLES TO lab_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON SEQUENCES TO lab_user;
+
+\connect lab_netmicro_jobs
+GRANT USAGE, CREATE ON SCHEMA public TO lab_user;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO lab_user;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO lab_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON TABLES TO lab_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON SEQUENCES TO lab_user;
+
+\connect lab_netmicro_policy
+GRANT USAGE, CREATE ON SCHEMA public TO lab_user;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO lab_user;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO lab_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON TABLES TO lab_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON SEQUENCES TO lab_user;
+
+\connect lab_netmicro_pricing
+GRANT USAGE, CREATE ON SCHEMA public TO lab_user;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO lab_user;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO lab_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON TABLES TO lab_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON SEQUENCES TO lab_user;
+
+\connect postgres

@@ -57,8 +57,8 @@ public class OfferParametersModel
 
 public class QuestionAnswerModel
 {
-    public string Question { get; set; }
-    public IList<ChoiceDto> Choices { get; set; }
-    public QuestionAnswer Answer { get; set; }
+    public string Question { get; set; } = string.Empty;
+    public IList<ChoiceDto> Choices { get; set; } = new List<ChoiceDto>();
+    public QuestionAnswer Answer { get; set; } = new ChoiceQuestionAnswer();
     
 }

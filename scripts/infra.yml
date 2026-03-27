@@ -13,7 +13,7 @@ services:
     image: postgres
     container_name: postgres
     volumes:
-      - /tmp/data/postgresql:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql/data
     ports:
       - 5432:5432
     environment:
@@ -44,3 +44,6 @@ services:
       NAME: rabbitmq
     volumes:
       - ./rabbitmq-isolated.conf:/etc/rabbitmq/rabbitmq.config
+
+volumes:
+  postgres-data:

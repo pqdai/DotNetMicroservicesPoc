@@ -6,9 +6,9 @@ namespace BlazorWasmClient.Components.Auth;
 
 public class CustomAuthenticationStateProvider : AuthenticationStateProvider
 {
-    private ISessionStorageService sessionStorageService;
-    private ILogger<CustomAuthenticationStateProvider> logger;
-    private ClaimsPrincipal anonymous = new ClaimsPrincipal(new ClaimsIdentity[]{});
+    private readonly ISessionStorageService sessionStorageService;
+    private readonly ILogger<CustomAuthenticationStateProvider> logger;
+    private readonly ClaimsPrincipal anonymous = new ClaimsPrincipal(new ClaimsIdentity[]{});
 
     public CustomAuthenticationStateProvider(ISessionStorageService sessionStorageService, ILogger<CustomAuthenticationStateProvider> logger)
     {
@@ -24,17 +24,17 @@ public class CustomAuthenticationStateProvider : AuthenticationStateProvider
             if (userSession == null)
                 return await Task.FromResult(new AuthenticationState(anonymous));
 
-            var claimsPrinciple = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
+            var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
             {
                 new Claim(ClaimTypes.Name, userSession.UserName),
                 new Claim(ClaimTypes.Role, userSession.Role),
             }, "JwtAuth"));
             
-            return await Task.FromResult(new AuthenticationState(claimsPrinciple));
+            return await Task.FromResult(new AuthenticationState(claimsPrincipal));
         }
         catch (Exception ex)
         {
-            logger.LogError("Exception in auth state provider", ex);
+            logger.LogError(ex, "Exception in auth state provider");
             return await Task.FromResult(new AuthenticationState(anonymous));
         }
     }
@@ -45,7 +45,7 @@ public class CustomAuthenticationStateProvider : AuthenticationStateProvider
 
         if (userSession != null)
         {
-            var claimsPrinciple = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
+            claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
             {
                 new Claim(ClaimTypes.Name, userSession.UserName),
                 new Claim(ClaimTypes.Role, userSession.Role),

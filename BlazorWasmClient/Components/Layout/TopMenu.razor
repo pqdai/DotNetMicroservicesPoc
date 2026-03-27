@@ -58,7 +58,7 @@
     private NavigationManager NavManager { get; set; }
     [CascadingParameter]
     private Task<AuthenticationState> AuthenticationState { get; set; }
-    private string UserName { get; set; }
+    private string UserName { get; set; } = string.Empty;
 
     protected async Task Logout()
     {
@@ -91,11 +91,11 @@
 
     [Parameter] public EventCallback<string> ThemeColorChanged { get; set; }
 
-    [Parameter] public string? LayoutType { get; set; }
+    [Parameter] public string LayoutType { get; set; } = string.Empty;
 
     [Parameter] public EventCallback<string> LayoutTypeChanged { get; set; }
 
-    [Inject] protected ITextLocalizerService? LocalizationService { get; set; }
+    [Inject] protected ITextLocalizerService LocalizationService { get; set; } = default!;
 
-    [CascadingParameter] protected Theme? Theme { get; set; }
+    [CascadingParameter] protected Theme Theme { get; set; } = default!;
 }

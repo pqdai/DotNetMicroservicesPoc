@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolicySearchService.Api", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolicySearchService.Test", "PolicySearchService.Test\PolicySearchService.Test.csproj", "{B26325E3-E43E-4A8C-A41B-472AF8AC3644}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardService.Api", "DashboardService.Api\DashboardService.Api.csproj", "{C99CFB82-3B6D-4B7A-9B55-2D0E33425C76}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.Api", "ProductService.Api\ProductService.Api.csproj", "{96917784-A4E9-4757-856B-791158A42203}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService", "ProductService\ProductService.csproj", "{A1D94ED2-595E-49DC-B5B3-4FF8E52922EE}"
@@ -85,6 +87,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eureka-server", "eureka-ser
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postgres", "postgres", "{369CB01D-A1A7-72D2-AABC-3F0945D148A2}"
 	ProjectSection(SolutionItems) = preProject
+		postgres\createdatabases.postgres.psql = postgres\createdatabases.postgres.psql
 		postgres\createdatabases.sql = postgres\createdatabases.sql
 		postgres\Dockerfile = postgres\Dockerfile
 	EndProjectSection
@@ -178,6 +181,10 @@ Global
 		{B26325E3-E43E-4A8C-A41B-472AF8AC3644}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B26325E3-E43E-4A8C-A41B-472AF8AC3644}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B26325E3-E43E-4A8C-A41B-472AF8AC3644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99CFB82-3B6D-4B7A-9B55-2D0E33425C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99CFB82-3B6D-4B7A-9B55-2D0E33425C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99CFB82-3B6D-4B7A-9B55-2D0E33425C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99CFB82-3B6D-4B7A-9B55-2D0E33425C76}.Release|Any CPU.Build.0 = Release|Any CPU
 		{96917784-A4E9-4757-856B-791158A42203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{96917784-A4E9-4757-856B-791158A42203}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96917784-A4E9-4757-856B-791158A42203}.Release|Any CPU.ActiveCfg = Release|Any CPU
